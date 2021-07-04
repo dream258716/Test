@@ -1,0 +1,24 @@
+
+##MySQL
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/ssmm?autoReconnect=true&useSSL=false&characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+logging:
+  level:
+    root: warn
+    com.scaffold.test.mapper: trace
+
+
+##mybatis plus
+#mybatis-plus:
+#  type-aliases-package: com.springboot.springbootdemo1.entity
+#  mapper-locations: classpath:mapper/house/*.xml
+#  configuration:
+#    map-underscore-to-camel-case: true
+server:
+  port: 8081
